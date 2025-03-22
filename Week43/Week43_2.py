@@ -7,7 +7,7 @@ import json
 def main(session: snowpark.Session): 
 
     # 使用するスキーマを指定
-    session.sql("USE SCHEMA FROSTYFRIDAY_TEST.DEMO").collect()
+    session.sql("USE SCHEMA FROSTYFRIDAY.DEMO").collect()
 
     # テーブルのデータを取得し、Pandas DataFrame に変換
     table_name = 'WEEK43'
