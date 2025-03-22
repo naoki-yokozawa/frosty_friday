@@ -7,7 +7,7 @@ from snowflake.snowpark.functions import lit, json_extract_path_text, flatten
 def main(session: snowpark.Session): 
 
     # FROSTYFRIDAY.DEMO.WEEK43テーブルのデータを抽出し、Snowpark DataFrameとして変数dｆにセット
-    tableName = 'FROSTYFRIDAY_TEST.DEMO.WEEK43'
+    tableName = 'FROSTYFRIDAY.DEMO.WEEK43'
     df = session.table(tableName)
    
     # json_extract_path_textでjsonカラムから要素を指定してwithColumnで新規カラムとして追加（ネストされている要素は親要素.子要素で取得）
