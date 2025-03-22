@@ -17,7 +17,7 @@ create database FROSTYFRIDAY;
 --スキーマの作成
 create or replace schema FROSTYFRIDAY.DEMO;
 
-create or replace table WEFROSTYFRIDAY.DEMO.WEEK43EK43 as select
+create or replace table FROSTYFRIDAY.DEMO.WEEK43 as select
 parse_json('{
   "company_name": "Superhero Staffing Inc.",
   "company_website": "https://www.superherostaffing.com",
