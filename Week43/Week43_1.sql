@@ -12,12 +12,12 @@ use role SYSADMIN;
 use warehouse COMPUTE_WH;
 
 --データベースの作成
-create database FROSTYFRIDAY_TEST;
+create database FROSTYFRIDAY;
 
 --スキーマの作成
-create or replace schema FROSTYFRIDAY_TEST.DEMO;
+create or replace schema FROSTYFRIDAY.DEMO;
 
-create or replace table WEFROSTYFRIDAY_TEST.DEMO.WEEK43EK43 as select
+create or replace table WEFROSTYFRIDAY.DEMO.WEEK43EK43 as select
 parse_json('{
   "company_name": "Superhero Staffing Inc.",
   "company_website": "https://www.superherostaffing.com",
@@ -85,4 +85,4 @@ parse_json('{
 select
     *
 from
-    FROSTYFRIDAY_TEST.DEMO.WEEK43;
+    FROSTYFRIDAY.DEMO.WEEK43;
