@@ -5,12 +5,9 @@ import pandas as pd
 import json
 
 def main(session: snowpark.Session): 
-
-    # 使用するスキーマを指定
-    session.sql("USE SCHEMA FROSTYFRIDAY.DEMO").collect()
-
+    
     # テーブルのデータを取得し、Pandas DataFrame に変換
-    table_name = 'WEEK43'
+    table_name = 'FROSTYFRIDAY.DEMO.WEEK43'
     pdf = session.table(table_name).to_pandas()  
 
     # JSONデータを辞書型に変換
